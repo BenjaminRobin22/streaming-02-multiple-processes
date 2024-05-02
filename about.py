@@ -19,7 +19,31 @@ To use, simply execute this script: `python about.py`
 @Updated: 2023-08
 
 ==========================================================================
+PS C:\Users\RobinBe\Documents\git\Robin_44671_8081> & c:/Users/RobinBe/Documents/git/Robin_44671_8081/.venv/Scripts/python.exe c:/Users/RobinBe/Documents/git/Robin_44671_8081/streaming-02-multiple-processes/streaming-02-multiple-processes/about.py
 
+======================================================================
+======================================================================
+ Welcome to the Python Debugging Information Utility ABOUT.PY
+ Date and Time: 2024-05-02 at 06:17 PM
+ Operating System: nt Windows 10
+ System Architecture: 64bit
+ Number of CPUs: 32
+ Machine Type: AMD64
+ Python Version: 3.12.3
+ Python Build Date and Compiler: tags/v3.12.3:f6650f9 with Apr  9 2024 14:05:25
+ Python Implementation: CPython
+ Active pip environment: None
+ Path to Interpreter:         C:\Users\RobinBe\Documents\git\Robin_44671_8081\.venv\Scripts\python.exe
+ Path to virtual environment: C:\Users\RobinBe\Documents\git\Robin_44671_8081\.venv
+ Current Working Directory:   C:\Users\RobinBe\Documents\git\Robin_44671_8081
+ Path to source directory:    c:\Users\RobinBe\Documents\git\Robin_44671_8081\streaming-02-multiple-processes\streaming-02-multiple-processes
+ Path to script file:         c:\Users\RobinBe\Documents\git\Robin_44671_8081\streaming-02-multiple-processes\streaming-02-multiple-processes\about.py
+ User's Home Directory:       C:\Users\RobinBe
+ Terminal Environment:        VS Code
+ Terminal Type:               cmd.exe
+ Git available in PATH:       True
+======================================================================
+======================================================================
 """
 
 # Import from Python Standard Library
