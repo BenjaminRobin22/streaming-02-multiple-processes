@@ -5,3 +5,83 @@ This will clear the console output.
 Run the file once while the tasks are short. 
 
 Copy and paste the terminal results (when task_duration is 0) here.
+
+PS C:\Users\RobinBe\Documents\git\Robin_44671_8081> & c:/Users/RobinBe/Documents/git/Robin_44671_8081/.venv/Scripts/python.exe c:/Users/RobinBe/Documents/git/Robin_44671_8081/streaming-02-multiple-processes/streaming-02-multiple-processes/00_check_core.py
+
+======================================================================
+======================================================================
+ Welcome to NW Diagnostics!
+ At: 2024-05-02 at 05:15 PM
+ Operating System: nt Windows 10
+ System Architecture: 64bit
+ Number of CPUs: 32
+ Machine Type: AMD64
+ Python Version: 3.12.3
+ Python Build Date and Compiler: tags/v3.12.3:f6650f9 with Apr  9 2024 14:05:25
+ Python Implementation: CPython
+ Active pip environment: None
+ Path to Interpreter:         C:\Users\RobinBe\Documents\git\Robin_44671_8081\.venv\Scripts\python.exe
+ Path to virtual environment: C:\Users\RobinBe\Documents\git\Robin_44671_8081\.venv
+ Current Working Directory:   C:\Users\RobinBe\Documents\git\Robin_44671_8081
+ Path to source directory:    c:\Users\RobinBe\Documents\git\Robin_44671_8081\streaming-02-multiple-processes\streaming-02-multiple-processes
+ Path to script file:         c:\Users\RobinBe\Documents\git\Robin_44671_8081\streaming-02-multiple-processes\streaming-02-multiple-processes\00_check_core.py
+ User's Home Directory:       C:\Users\RobinBe
+ Terminal Environment:        VS Code
+ Git available in PATH:       True
+======================================================================
+======================================================================
+
+PS C:\Users\RobinBe\Documents\git\Robin_44671_8081> & c:/Users/RobinBe/Documents/git/Robin_44671_8081/.venv/Scripts/python.exe c:/Users/RobinBe/Documents/git/Robin_44671_8081/streaming-02-multiple-processes/streaming-02-multiple-processes/multiple_processes.py
+633;C2024-05-02 17:15:46,788 - INFO - 
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-02 at 05:15 PM
+  Operating System: nt Windows 10
+  Python Version:   3.12.3
+  Path to Interpreter:  C:\Users\RobinBe\Documents\git\Robin_44671_8081\.venv\Scripts\python.exe
+======================================================================
+
+2024-05-02 17:15:46,790 - INFO - Called recreate_database().
+2024-05-02 17:15:46,791 - INFO - Called drop_table().
+2024-05-02 17:15:46,799 - INFO - Table 'pets' dropped successfully.
+2024-05-02 17:15:46,799 - INFO - Called create_table().
+2024-05-02 17:15:46,811 - INFO - Table 'pets' created successfully.
+2024-05-02 17:15:47,265 - INFO - Called process_one().
+2024-05-02 17:15:47,265 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.
+2024-05-02 17:15:47,308 - INFO - Called process_two().
+2024-05-02 17:15:47,309 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-02 17:15:47,330 - INFO - Called process_three().
+PS C:\Users\RobinBe\Documents\git\Robin_44671_8081> & c:/Users/RobinBe/Documents/git/Robin_44671_8081/.venv/Scripts/python.exe c:/Users/RobinBe/Documents/git/Robin_44671_8081/streaming-02-multiple-processes/streaming-02-multiple-processes/multiple_processes.py
+633;C2024-05-02 17:38:54,917 - INFO -
+======================================================================
+STARTING UP.............................
+  Date and Time:    2024-05-02 at 05:38 PM
+  Operating System: nt Windows 10
+  Python Version:   3.12.3
+  Path to Interpreter:  C:\Users\RobinBe\Documents\git\Robin_44671_8081\.venv\Scripts\python.exe
+======================================================================
+
+2024-05-02 17:38:54,918 - INFO - Called recreate_database().       
+2024-05-02 17:38:54,919 - INFO - Called drop_table().
+2024-05-02 17:38:54,933 - INFO - Table 'pets' dropped successfully.
+2024-05-02 17:38:54,935 - INFO - Called create_table().
+2024-05-02 17:38:54,949 - INFO - Table 'pets' created successfully.
+2024-05-02 17:38:55,898 - INFO - Called process_one().
+2024-05-02 17:38:55,898 - INFO -   Called insert_pet() with process=P1, name=Ace, breed=Dog.  
+2024-05-02 17:38:55,915 - INFO -   Called insert_pet() with process=P1, name=Buddy, breed=Dog.
+2024-05-02 17:38:55,967 - INFO - Called process_two().
+2024-05-02 17:38:55,968 - INFO -   Called insert_pet() with process=P2, name=Cooper, breed=Rabbit.
+2024-05-02 17:38:55,986 - INFO -   Called insert_pet() with process=P2, name=Dingo, breed=Dog.
+2024-05-02 17:38:56,032 - INFO - Called process_three().
+2024-05-02 17:38:56,033 - INFO -   Called insert_pet() with process=P3, name=Emma, breed=Rabbit.
+2024-05-02 17:38:56,051 - INFO -   Called insert_pet() with process=P3, name=Felix, breed=Cat.
+2024-05-02 17:38:56,094 - INFO - 
+SUCCESS: All processes successfully completed!
+
+Now - increase the task duration (representing
+      the time the task has the database
+      tied up during an insert statement).
+How well do multiple, concurrent processes share a database
+    when each task takes more time?
+How can multiple processes share a resource
+    without interfering with each other?
